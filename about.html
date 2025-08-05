@@ -67,6 +67,7 @@
       background-color: #263959;
     }
   </style>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
   <div class="container">
@@ -95,6 +96,11 @@
 
       <label for="email">Email</label><br>
       <input type="email" name="email" id="email" required>
+
+      <!-- hCaptcha widget -->
+      <div class="h-captcha" data-sitekey="32bab0ac-306a-4946-b094-cae65c38025c"></div>
+      <input type="hidden" name="h-captcha-response">
+      <input type="hidden" name="_captcha" value="true">
 
       <button type="submit">Submit Request</button>
     </form>
